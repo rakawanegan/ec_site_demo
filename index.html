@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ドリンク注文画面</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ドリンク注文画面</h1>
+
+    <div class="container">
+    <!-- ドリンクリスト -->
+    <div class="drinks">
+    <div class="drink-item">
+    <button id="coffee" class="drink-button">
+        <span class="drink-name">コーヒー</span>
+        <span class="drink-price">480円</span>
+        <span id="coffee-count" class="badge">0</span>
+    </button>
+    </div>
+    <div class="drink-item">
+        <button id="tea" class="drink-button">
+            <span class="drink-name">紅茶</span>
+            <span class="drink-price">280円</span>
+            <span id="tea-count" class="badge">0</span>
+        </button>
+    </div>
+    <div class="drink-item">
+        <button id="milk" class="drink-button">
+            <span class="drink-name">ミルク</span>
+            <span class="drink-price">180円</span>
+            <span id="milk-count" class="badge">0</span>
+        </button>
+    </div>
+    <div class="drink-item">
+        <button id="coke" class="drink-button">
+        <span class="drink-name">コーラ</span>
+        <span class="drink-price">190円</span>
+        <span id="coke-count" class="badge">0</span>
+        </button>
+    </div>
+    <div class="drink-item">
+        <button id="beer" class="drink-button">
+            <span class="drink-name">ビール</span>
+            <span class="drink-price">580円</span>
+            <span id="beer-count" class="badge">0</span>
+        </button>
+    </div>
+    </div>
+
+    <!-- 合計表示 -->
+    <div class="summary">
+        <h2>お会計</h2>
+        <hr>
+        <p>商品数：<span id="count">0</span> 個</p>
+        <p>合計金額：<span id="price">0</span> 円</p>
+    </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
